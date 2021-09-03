@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="appdeimi">
+<head>
+   <script src="js/angular.min.js"></script>
+   <script src="js/operaciones.js"></script>
+
+   
+    <title>Document</title>
+</head>
+<body>
+
+    <div ng-controller="controlador">
+
+        <input type="text" ng-model="mitexto" ng-change="cargar_datos()"> <hr>
+        <input type="text" ng-model="inicio">
+        <input type="text" ng-model="final">
+
+
+        <hr>
+
+
+
+        <a href="#" ng-click="cargar_datos()">Click</a>
+
+        <div ng-repeat="datos in informacion">
+
+            {{datos.nombres}}
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
